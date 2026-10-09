@@ -1,0 +1,3 @@
+/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir
+/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/edit_cache.dir
+/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/rebuild_cache.dir

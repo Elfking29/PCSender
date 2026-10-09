@@ -1,0 +1,18 @@
+# ninja log v7
+1	15	1791586224346068073	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+15	256	1791585527939131163	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
+256	308	1791585528181129812	PCSender	1ef7b18e3a1854ce
+15	49	1791586224373403238	build.ninja	e0fd7145e5683c16
+15	49	1791586224373403238	/home/elfking-laptop/Development/Desk Clock/PC/build/cmake_install.cmake	e0fd7145e5683c16
+0	11	1791586224382067970	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+12	206	1791586224394067935	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
+1	11	1791586236663032687	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+12	169	1791586236674032655	CMakeFiles/PCSender.dir/src/lib/conman.cpp.o	3e541cb23d9d7dd6
+170	224	1791586236832877904	PCSender	f7eedff51768ff3b
+1	11	1791586469464287701	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+0	11	1791586474362271882	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+11	190	1791586474373271846	CMakeFiles/PCSender.dir/src/lib/conman.cpp.o	3e541cb23d9d7dd6
+190	248	1791586474552271268	PCSender	f7eedff51768ff3b
+1	11	1791586481552248660	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+12	184	1791586481563248625	CMakeFiles/PCSender.dir/src/lib/conman.cpp.o	3e541cb23d9d7dd6
+184	241	1791586481735248069	PCSender	f7eedff51768ff3b

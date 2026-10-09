@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/PCSender.dir/link.d CMakeFiles/PCSender.dir/src/sender.cpp.o -o PCSender

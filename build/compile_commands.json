@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/elfking-laptop/Development/Desk Clock/PC/build",
+  "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -o CMakeFiles/PCSender.dir/src/sender.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/sender.cpp\"",
+  "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/sender.cpp",
+  "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/sender.cpp.o"
+},
+{
+  "directory": "/home/elfking-laptop/Development/Desk Clock/PC/build",
+  "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -o CMakeFiles/PCSender.dir/src/lib/conman.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/lib/conman.cpp\"",
+  "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/lib/conman.cpp",
+  "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/lib/conman.cpp.o"
+}
+]
