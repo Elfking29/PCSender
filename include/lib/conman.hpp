@@ -7,20 +7,20 @@
 
 class Conman{
     private:
-        termios tty{};
+        int dev=-1;
         bool con=false;
         std::string buffer="";
 
-        int port();
+        std::string port();
     public:
         Conman();
 
         void disconnect();
         void connect();
-        bool connected();
+        bool connected() const;
 
         std::string read();
-        void send(std::string s);
+        void write(std::string s);
 
 
 };

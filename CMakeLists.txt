@@ -22,3 +22,8 @@ target_include_directories(PCSender PRIVATE
     include/lib
     include/sources
 )
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(UDEV REQUIRED IMPORTED_TARGET libudev)
+
+target_link_libraries(PCSender PRIVATE PkgConfig::UDEV)
