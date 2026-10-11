@@ -59,7 +59,7 @@ int main(){
             // Handle Pico Input
             std::string line = usb.read();
             if (line!=""){
-                printf(("FROM PICO: "+line).c_str());
+                //printf(("FROM PICO: "+line).c_str());
                 if (line=="ALIVE\r\n"){watchdog=elapsed;}
                 else {}
             }
@@ -76,9 +76,9 @@ int main(){
         }
 
         else {
-            printf("DISCONNECT\n");
+            //printf("DISCONNECT\n");
             usb.connect();
-            printf("CONNECT\n");
+            //printf("CONNECT\n");
             now = std::chrono::steady_clock::now();
             elapsed = std::chrono::duration<double>(now-start).count();
             watchdog=elapsed;
