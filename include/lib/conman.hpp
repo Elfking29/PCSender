@@ -1,9 +1,6 @@
 #pragma once
 
 #include <string>
-#include <vector>
-
-#include <termios.h>
 
 class Conman{
     private:
