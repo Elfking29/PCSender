@@ -30,7 +30,7 @@ void Music::update(){
     // Player List
     players.clear();
     char buffer[1024];
-    FILE* pipe = popen("playerctl -l", "r");
+    FILE* pipe = popen("playerctl -l 2>/dev/null", "r");
     if (pipe != nullptr){
         while (fgets(buffer, sizeof(buffer), pipe) != nullptr){
             players += buffer;
@@ -72,7 +72,7 @@ void Music::update(){
     "'{{playerInstance}}///SPLIT///{{xesam:title}}///SPLIT///"
     "{{xesam:album}}///SPLIT///{{xesam:artist}}///SPLIT///"
     "{{status}}///SPLIT///{{position}}///SPLIT///{{mpris:length}}///SPLIT///' "
-    "-p \"" + name + "\"";
+    "-p \"" + name + "\" 2>/dev/null";
 
     std::string data;
     pipe = popen(command.c_str(), "r");
@@ -117,7 +117,7 @@ void Music::update(){
         if (i!=7){reset();return;}
 
         // Volume
-        pipe = popen("wpctl get-volume @DEFAULT_AUDIO_SINK@", "r");
+        pipe = popen("wpctl get-volume @DEFAULT_AUDIO_SINK@ 2>/dev/null", "r");
         std::string output;
         if (pipe != nullptr){
             while (fgets(buffer, sizeof(buffer), pipe) != nullptr){
