@@ -10,5 +10,23 @@
   "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -o CMakeFiles/PCSender.dir/src/lib/conman.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/lib/conman.cpp\"",
   "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/lib/conman.cpp",
   "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/lib/conman.cpp.o"
+},
+{
+  "directory": "/home/elfking-laptop/Development/Desk Clock/PC/build",
+  "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -o CMakeFiles/PCSender.dir/src/sources/music.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/music.cpp\"",
+  "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/music.cpp",
+  "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/sources/music.cpp.o"
+},
+{
+  "directory": "/home/elfking-laptop/Development/Desk Clock/PC/build",
+  "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -o CMakeFiles/PCSender.dir/src/sources/stats.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/stats.cpp\"",
+  "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/stats.cpp",
+  "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/sources/stats.cpp.o"
+},
+{
+  "directory": "/home/elfking-laptop/Development/Desk Clock/PC/build",
+  "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -o CMakeFiles/PCSender.dir/src/sources/weather.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/weather.cpp\"",
+  "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/weather.cpp",
+  "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/sources/weather.cpp.o"
 }
 ]

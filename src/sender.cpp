@@ -1,14 +1,29 @@
 #include <string>
+#include <array>
 #include <thread>
 #include <chrono>
 
 #include <conman.hpp>
+
+#include <stats.hpp>
+#include <music.hpp>
+#include <weather.hpp>
 
 
 int main(){
     Conman usb;
 
     // Sources
+    Stats stats;
+    Music music;
+    Weather weather;
+
+    std::array<Source*, 3> sources = {
+        &stats,
+        &music,
+        &weather
+    };
+
 
     // Variables
     std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
@@ -20,6 +35,8 @@ int main(){
     int item=0;
 
     while (true){
+
+        // Time Stuff
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
         now = std::chrono::steady_clock::now();
         elapsed = std::chrono::duration<double>(now-start).count();
@@ -28,7 +45,9 @@ int main(){
         if (usb.connected()){
             // Watchdog
             if (watchdog+5<elapsed){
+                printf("WATCHDOG");
                 usb.disconnect();
+                for (int i=0; i<sources.size(); i++){sources[i]->reset();}
             }
 
             // Poke
@@ -39,25 +58,29 @@ int main(){
 
             // Handle Pico Input
             std::string line = usb.read();
-            printf(("FROM PICO: "+line).c_str());
-            if (line=="ALIVE"){watchdog=elapsed;}
-            else {}
-
-            // Update Sources
-            //for (int i=0; i<sources.size(); i++){sources[i]->update();}
+            if (line!=""){
+                printf(("FROM PICO: "+line).c_str());
+                if (line=="ALIVE\r\n"){watchdog=elapsed;}
+                else {}
+            }
 
             // Handle Pico Output
             if (update+0.6<elapsed){
                 update=elapsed;
-                //usb.write(sources[item]->sendstring());
-                //item+=1;
-                //item%=sources.size();
+                sources[item]->update();
+                usb.write(sources[item]->sendstring());
+                item+=1;
+                item%=sources.size();
             }
 
         }
 
         else {
+            printf("DISCONNECT\n");
             usb.connect();
+            printf("CONNECT\n");
+            now = std::chrono::steady_clock::now();
+            elapsed = std::chrono::duration<double>(now-start).count();
             watchdog=elapsed;
             poke=-1;
             update=-1;

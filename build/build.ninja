@@ -67,6 +67,33 @@ build CMakeFiles/PCSender.dir/src/lib/conman.cpp.o: CXX_COMPILER__PCSender_unsca
   OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/lib
   TARGET_SUPPORT_DIR = CMakeFiles/PCSender.dir
 
+build CMakeFiles/PCSender.dir/src/sources/music.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/sources/music.cpp || cmake_object_order_depends_target_PCSender
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/PCSender.dir/src/sources/music.cpp.o.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
+  OBJECT_DIR = CMakeFiles/PCSender.dir
+  OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/sources
+  TARGET_SUPPORT_DIR = CMakeFiles/PCSender.dir
+
+build CMakeFiles/PCSender.dir/src/sources/stats.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/sources/stats.cpp || cmake_object_order_depends_target_PCSender
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/PCSender.dir/src/sources/stats.cpp.o.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
+  OBJECT_DIR = CMakeFiles/PCSender.dir
+  OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/sources
+  TARGET_SUPPORT_DIR = CMakeFiles/PCSender.dir
+
+build CMakeFiles/PCSender.dir/src/sources/weather.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/sources/weather.cpp || cmake_object_order_depends_target_PCSender
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/PCSender.dir/src/sources/weather.cpp.o.d
+  FLAGS = -g -std=c++17
+  INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
+  OBJECT_DIR = CMakeFiles/PCSender.dir
+  OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/sources
+  TARGET_SUPPORT_DIR = CMakeFiles/PCSender.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target PCSender
@@ -75,7 +102,7 @@ build CMakeFiles/PCSender.dir/src/lib/conman.cpp.o: CXX_COMPILER__PCSender_unsca
 #############################################
 # Link the executable PCSender
 
-build PCSender: CXX_EXECUTABLE_LINKER__PCSender_Debug CMakeFiles/PCSender.dir/src/sender.cpp.o CMakeFiles/PCSender.dir/src/lib/conman.cpp.o | /usr/lib64/libudev.so
+build PCSender: CXX_EXECUTABLE_LINKER__PCSender_Debug CMakeFiles/PCSender.dir/src/sender.cpp.o CMakeFiles/PCSender.dir/src/lib/conman.cpp.o CMakeFiles/PCSender.dir/src/sources/music.cpp.o CMakeFiles/PCSender.dir/src/sources/stats.cpp.o CMakeFiles/PCSender.dir/src/sources/weather.cpp.o | /usr/lib64/libudev.so
   CONFIG = Debug
   DEP_FILE = CMakeFiles/PCSender.dir/link.d
   FLAGS = -g

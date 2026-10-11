@@ -16,6 +16,7 @@ Conman::Conman(){}
 void Conman::disconnect(){
     con = false;
     if (dev != -1) {
+        tcflush(dev, TCIOFLUSH);
         ::close(dev);
         dev = -1;
     }
@@ -48,6 +49,8 @@ std::string Conman::read(){
 }
 
 void Conman::write(std::string s){
+    if (dev==-1){return;}
+
     s += '\n';
 
     ssize_t n = ::write(dev, s.c_str(), s.size());
