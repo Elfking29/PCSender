@@ -52,16 +52,25 @@ build cmake_object_order_depends_target_PCSender: phony || .
 build CMakeFiles/PCSender.dir/src/sender.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/sender.cpp || cmake_object_order_depends_target_PCSender
   CONFIG = Debug
   DEP_FILE = CMakeFiles/PCSender.dir/src/sender.cpp.o.d
-  FLAGS = -g -std=c++17
+  FLAGS = -g -std=c++17 -DWITH_GZFILEOP
   INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
   OBJECT_DIR = CMakeFiles/PCSender.dir
   OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src
   TARGET_SUPPORT_DIR = CMakeFiles/PCSender.dir
 
+build CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/lib/bequests.cpp || cmake_object_order_depends_target_PCSender
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o.d
+  FLAGS = -g -std=c++17 -DWITH_GZFILEOP
+  INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
+  OBJECT_DIR = CMakeFiles/PCSender.dir
+  OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/lib
+  TARGET_SUPPORT_DIR = CMakeFiles/PCSender.dir
+
 build CMakeFiles/PCSender.dir/src/lib/conman.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/lib/conman.cpp || cmake_object_order_depends_target_PCSender
   CONFIG = Debug
   DEP_FILE = CMakeFiles/PCSender.dir/src/lib/conman.cpp.o.d
-  FLAGS = -g -std=c++17
+  FLAGS = -g -std=c++17 -DWITH_GZFILEOP
   INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
   OBJECT_DIR = CMakeFiles/PCSender.dir
   OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/lib
@@ -70,7 +79,7 @@ build CMakeFiles/PCSender.dir/src/lib/conman.cpp.o: CXX_COMPILER__PCSender_unsca
 build CMakeFiles/PCSender.dir/src/sources/music.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/sources/music.cpp || cmake_object_order_depends_target_PCSender
   CONFIG = Debug
   DEP_FILE = CMakeFiles/PCSender.dir/src/sources/music.cpp.o.d
-  FLAGS = -g -std=c++17
+  FLAGS = -g -std=c++17 -DWITH_GZFILEOP
   INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
   OBJECT_DIR = CMakeFiles/PCSender.dir
   OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/sources
@@ -79,7 +88,7 @@ build CMakeFiles/PCSender.dir/src/sources/music.cpp.o: CXX_COMPILER__PCSender_un
 build CMakeFiles/PCSender.dir/src/sources/stats.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/sources/stats.cpp || cmake_object_order_depends_target_PCSender
   CONFIG = Debug
   DEP_FILE = CMakeFiles/PCSender.dir/src/sources/stats.cpp.o.d
-  FLAGS = -g -std=c++17
+  FLAGS = -g -std=c++17 -DWITH_GZFILEOP
   INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
   OBJECT_DIR = CMakeFiles/PCSender.dir
   OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/sources
@@ -88,7 +97,7 @@ build CMakeFiles/PCSender.dir/src/sources/stats.cpp.o: CXX_COMPILER__PCSender_un
 build CMakeFiles/PCSender.dir/src/sources/weather.cpp.o: CXX_COMPILER__PCSender_unscanned_Debug /home/elfking-laptop/Development/Desk$ Clock/PC/src/sources/weather.cpp || cmake_object_order_depends_target_PCSender
   CONFIG = Debug
   DEP_FILE = CMakeFiles/PCSender.dir/src/sources/weather.cpp.o.d
-  FLAGS = -g -std=c++17
+  FLAGS = -g -std=c++17 -DWITH_GZFILEOP
   INCLUDES = -I"/home/elfking-laptop/Development/Desk Clock/PC/include" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/lib" -I"/home/elfking-laptop/Development/Desk Clock/PC/include/sources"
   OBJECT_DIR = CMakeFiles/PCSender.dir
   OBJECT_FILE_DIR = CMakeFiles/PCSender.dir/src/sources
@@ -102,12 +111,12 @@ build CMakeFiles/PCSender.dir/src/sources/weather.cpp.o: CXX_COMPILER__PCSender_
 #############################################
 # Link the executable PCSender
 
-build PCSender: CXX_EXECUTABLE_LINKER__PCSender_Debug CMakeFiles/PCSender.dir/src/sender.cpp.o CMakeFiles/PCSender.dir/src/lib/conman.cpp.o CMakeFiles/PCSender.dir/src/sources/music.cpp.o CMakeFiles/PCSender.dir/src/sources/stats.cpp.o CMakeFiles/PCSender.dir/src/sources/weather.cpp.o | /usr/lib64/libudev.so
+build PCSender: CXX_EXECUTABLE_LINKER__PCSender_Debug CMakeFiles/PCSender.dir/src/sender.cpp.o CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o CMakeFiles/PCSender.dir/src/lib/conman.cpp.o CMakeFiles/PCSender.dir/src/sources/music.cpp.o CMakeFiles/PCSender.dir/src/sources/stats.cpp.o CMakeFiles/PCSender.dir/src/sources/weather.cpp.o | /usr/lib64/libcurl.so /usr/lib64/libudev.so /usr/lib64/libcurl.so
   CONFIG = Debug
   DEP_FILE = CMakeFiles/PCSender.dir/link.d
   FLAGS = -g
   LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/PCSender.dir/link.d
-  LINK_LIBRARIES = /usr/lib64/libudev.so
+  LINK_LIBRARIES = /usr/lib64/libcurl.so  /usr/lib64/libudev.so  /usr/lib64/libcurl.so
   OBJECT_DIR = CMakeFiles/PCSender.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -173,14 +182,14 @@ build /home/elfking-laptop/Development/Desk$ Clock/PC/build/CMakeFiles/cmake.ver
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/elfking-laptop/Development/Desk$ Clock/PC/build/cmake_install.cmake: RERUN_CMAKE /home/elfking-laptop/Development/Desk$ Clock/PC/build/CMakeFiles/cmake.verify_globs | /home/elfking-laptop/Development/Desk$ Clock/PC/CMakeLists.txt /home/elfking-laptop/Development/Desk$ Clock/PC/build/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake
+build build.ninja /home/elfking-laptop/Development/Desk$ Clock/PC/build/cmake_install.cmake: RERUN_CMAKE /home/elfking-laptop/Development/Desk$ Clock/PC/build/CMakeFiles/cmake.verify_globs | /home/elfking-laptop/Development/Desk$ Clock/PC/CMakeLists.txt /home/elfking-laptop/Development/Desk$ Clock/PC/build/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindCURL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/elfking-laptop/Development/Desk$ Clock/PC/CMakeLists.txt /home/elfking-laptop/Development/Desk$ Clock/PC/build/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake: phony
+build /home/elfking-laptop/Development/Desk$ Clock/PC/CMakeLists.txt /home/elfking-laptop/Development/Desk$ Clock/PC/build/CMakeFiles/VerifyGlobs.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindCURL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake/Modules/Linker/GNU-CXX.cmake /usr/share/cmake/Modules/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/GNU.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/share/cmake/nlohmann_json/nlohmann_jsonTargets.cmake CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake: phony
 
 
 #############################################

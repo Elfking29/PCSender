@@ -6,9 +6,30 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "CURL::libcurl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__libcurl-Debug-2a31fbc3658a1c772007.json",
+					"name" : "CURL::libcurl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "PkgConfig::UDEV::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PkgConfig__UDEV-Debug-4923dd5984da95802142.json",
+					"jsonFile" : "target-PkgConfig__UDEV-Debug-5519c4ba08db72125edc.json",
 					"name" : "PkgConfig::UDEV",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json-Debug-385d049c09c8d7fa4196.json",
+					"name" : "nlohmann_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nlohmann_json::nlohmann_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nlohmann_json__nlohmann_json-Debug-345569883327f04073e6.json",
+					"name" : "nlohmann_json::nlohmann_json",
 					"projectIndex" : 0
 				}
 			],
@@ -17,7 +38,10 @@
 				{
 					"abstractTargetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2,
+						3
 					],
 					"build" : ".",
 					"jsonFile" : "directory-.-Debug-fd6451d79dc282e2f566.json",
@@ -39,7 +63,10 @@
 				{
 					"abstractTargetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
@@ -57,7 +84,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PCSender::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PCSender-Debug-35c0945c05eda9f55791.json",
+					"jsonFile" : "target-PCSender-Debug-7fab7d44368fcd0b6c65.json",
 					"name" : "PCSender",
 					"projectIndex" : 0
 				}

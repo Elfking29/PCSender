@@ -1,34 +1,46 @@
 # ninja log v7
-0	10	1791750371875086054	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-11	233	1791750371886086001	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
-233	287	1791750372108084923	PCSender	49aa5467bfc89b1c
-14	84	1791747308885294119	build.ninja	e0fd7145e5683c16
-14	84	1791747308885294119	/home/elfking-laptop/Development/Desk Clock/PC/build/cmake_install.cmake	e0fd7145e5683c16
-15	355	1791750290898478980	CMakeFiles/PCSender.dir/src/lib/conman.cpp.o	3e541cb23d9d7dd6
+1	11	1791756886176316833	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+12	302	1791756881779335879	CMakeFiles/PCSender.dir/src/sender.cpp.o	3e1db0a49b0e6ba5
+327	431	1791756882094334515	PCSender	aeeb724d14fe0f21
+18	421	1791756990318171796	build.ninja	e0fd7145e5683c16
+18	421	1791756990317299275	/home/elfking-laptop/Development/Desk Clock/PC/build/cmake_install.cmake	e0fd7145e5683c16
+12	327	1791756881781136379	CMakeFiles/PCSender.dir/src/lib/conman.cpp.o	77084712939569c6
 16	28	1791746388281502294	CMakeFiles/PCSender.dir/src/sources/sources.cpp.o	750196085db2f800
-15	214	1791749375078320090	CMakeFiles/PCSender.dir/src/sources/music.cpp.o	7fa7c8d12a0a90ba
-15	215	1791749375078846309	CMakeFiles/PCSender.dir/src/sources/weather.cpp.o	6dd0cdbe81460dd5
-15	320	1791749375078701577	CMakeFiles/PCSender.dir/src/sources/stats.cpp.o	3ea65eb39b1f79ee
-1	15	1791750373751387968	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-1	15	1791750394666975466	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-16	261	1791750394681975393	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
-261	321	1791750394926974204	PCSender	49aa5467bfc89b1c
-0	10	1791750473040595179	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-11	250	1791750473051595126	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
-12	276	1791750473052595121	CMakeFiles/PCSender.dir/src/lib/conman.cpp.o	3e541cb23d9d7dd6
-276	334	1791750473316593840	PCSender	49aa5467bfc89b1c
-1	11	1791750474089590089	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-2	15	1791750626912848785	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-16	253	1791750626926848717	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
-253	315	1791750627163847569	PCSender	49aa5467bfc89b1c
-1	11	1791750628002843502	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-1	15	1791750706581462580	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-16	283	1791750706596462507	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
-283	337	1791750706863468398	PCSender	49aa5467bfc89b1c
-1	12	1791750707607457606	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-1	14	1791750720359395778	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-1	14	1791750721496390267	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-0	15	1791750740020300471	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
-16	304	1791750740036300393	CMakeFiles/PCSender.dir/src/sender.cpp.o	5a819e1d492e70dc
-304	357	1791750740324298997	PCSender	49aa5467bfc89b1c
-1	14	1791750741253294494	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+12	314	1791756881781335243	CMakeFiles/PCSender.dir/src/sources/music.cpp.o	8616711f307ac9bf
+13	211	1791756881781914563	CMakeFiles/PCSender.dir/src/sources/weather.cpp.o	a46b6d13dbfab32a
+13	312	1791756881781636159	CMakeFiles/PCSender.dir/src/sources/stats.cpp.o	c2d1a82eafb4bcbb
+12	145	1791756881780963865	CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o	609d927ebbfaa6f2
+1	16	1791756999835824536	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+17	205	1791756999851824467	CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o	609d927ebbfaa6f2
+206	305	1791757000041374919	PCSender	aeeb724d14fe0f21
+1	15	1791758651247190119	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+16	316	1791758651263143153	CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o	609d927ebbfaa6f2
+1	15	1791758671262095938	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+0	11	1791758691588000296	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+13	203	1791758691601000235	CMakeFiles/PCSender.dir/src/sources/weather.cpp.o	a46b6d13dbfab32a
+12	249	1791758691600000240	CMakeFiles/PCSender.dir/src/sender.cpp.o	3e1db0a49b0e6ba5
+249	355	1791758691836999124	PCSender	aeeb724d14fe0f21
+0	11	1791759607563700351	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+12	276	1791759607575700295	CMakeFiles/PCSender.dir/src/sender.cpp.o	3e1db0a49b0e6ba5
+12	296	1791759607577106440	CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o	609d927ebbfaa6f2
+1	14	1791759614967665839	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+1	17	1791759723426160268	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+19	356	1791759723443160189	CMakeFiles/PCSender.dir/src/sender.cpp.o	3e1db0a49b0e6ba5
+20	383	1791759723444160184	CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o	609d927ebbfaa6f2
+1	15	1791759733468113464	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+16	304	1791759733483113394	CMakeFiles/PCSender.dir/src/sources/weather.cpp.o	a46b6d13dbfab32a
+304	406	1791759733771112052	PCSender	aeeb724d14fe0f21
+1	15	1791760503606535248	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+16	319	1791760503621535180	CMakeFiles/PCSender.dir/src/sender.cpp.o	3e1db0a49b0e6ba5
+16	341	1791760503623100428	CMakeFiles/PCSender.dir/src/lib/bequests.cpp.o	609d927ebbfaa6f2
+16	1624	1791760503623305063	CMakeFiles/PCSender.dir/src/sources/weather.cpp.o	a46b6d13dbfab32a
+1625	1751	1791760505232120519	PCSender	aeeb724d14fe0f21
+1	15	1791761517476950791	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+16	1708	1791761517491950723	CMakeFiles/PCSender.dir/src/sources/weather.cpp.o	a46b6d13dbfab32a
+1708	1842	1791761519183943119	PCSender	aeeb724d14fe0f21
+1	12	1791761520677936405	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+1	11	1791761834539525840	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4
+13	283	1791761834551525787	CMakeFiles/PCSender.dir/src/sender.cpp.o	3e1db0a49b0e6ba5
+13	1666	1791761834553021639	CMakeFiles/PCSender.dir/src/sources/weather.cpp.o	a46b6d13dbfab32a
+1666	1797	1791761836204518358	PCSender	aeeb724d14fe0f21
+1	12	1791761837443512789	/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/cmake.verify_globs	8cda49adfd2a33b4

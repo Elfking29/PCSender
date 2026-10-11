@@ -4,6 +4,7 @@
 # SOURCES at CMakeLists.txt:10 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/elfking-laptop/Development/Desk Clock/PC/src/lib/*.cpp")
 set(OLD_GLOB
+  "/home/elfking-laptop/Development/Desk Clock/PC/src/lib/bequests.cpp"
   "/home/elfking-laptop/Development/Desk Clock/PC/src/lib/conman.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

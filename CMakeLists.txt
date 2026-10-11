@@ -23,7 +23,13 @@ target_include_directories(PCSender PRIVATE
     include/sources
 )
 
+find_package(nlohmann_json REQUIRED)
+find_package(CURL REQUIRED)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(UDEV REQUIRED IMPORTED_TARGET libudev)
 
-target_link_libraries(PCSender PRIVATE PkgConfig::UDEV)
+target_link_libraries(PCSender PRIVATE 
+    PkgConfig::UDEV 
+    CURL::libcurl
+    nlohmann_json::nlohmann_json
+)

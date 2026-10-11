@@ -45,7 +45,7 @@ int main(){
         if (usb.connected()){
             // Watchdog
             if (watchdog+5<elapsed){
-                printf("WATCHDOG");
+                printf("WATCHDOG\n");
                 usb.disconnect();
                 for (int i=0; i<sources.size(); i++){sources[i]->reset();}
             }

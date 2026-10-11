@@ -16,7 +16,6 @@ Conman::Conman(){}
 void Conman::disconnect(){
     con = false;
     if (dev != -1) {
-        tcflush(dev, TCIOFLUSH);
         ::close(dev);
         dev = -1;
     }
