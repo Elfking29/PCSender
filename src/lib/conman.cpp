@@ -54,7 +54,7 @@ void Conman::write(std::string s){
 
     ssize_t n = ::write(dev, s.c_str(), s.size());
 
-    if (n==-1) {perror("write");}
+    if (n==-1) {}//{perror("write");}
     else if (static_cast<size_t>(n)<s.size()){
         fprintf(stderr, "Partial write: %zd of %zu bytes\n", n, s.size());
     }
@@ -115,13 +115,13 @@ void Conman::connect(){
             if (p.empty()){break;}
 
             dev = ::open(p.c_str(), O_RDWR|O_NOCTTY|O_NONBLOCK);
-            if (dev==-1){perror("open");disconnect();break;}
+            if (dev==-1){disconnect();break;}//{perror("open");disconnect();break;}
       
             // Configure Port
             termios settings{};
 
             if (tcgetattr(dev, &settings) == -1) {
-                perror("tcgetattr");
+                //perror("tcgetattr");
                 disconnect();
                 break;
             }
@@ -138,7 +138,7 @@ void Conman::connect(){
             settings.c_cflag |= CS8;
 
             if (tcsetattr(dev, TCSANOW, &settings) == -1) {
-                perror("tcsetattr");
+                //perror("tcsetattr");
                 disconnect();
                 break;
             }
