@@ -75,7 +75,7 @@ void Rss::handle(std::string res) {
         for (std::size_t i = 0; i < articles.size(); ++i) {
             std::string entry = authors[i] + "///SPLIT///" + articles[i] + "///SPLIT///";
 
-            if (sndstr.size() + entry.size() > 1024) {
+            if (sndstr.size() + entry.size() > 1013) {
                 break;
             }
 
