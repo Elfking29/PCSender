@@ -14,7 +14,7 @@ void Rss::reset(){
 }
 
 std::string Rss::sendstring(){
-    return "";
+    return sndstr;
 }
 
 void Rss::update(){
