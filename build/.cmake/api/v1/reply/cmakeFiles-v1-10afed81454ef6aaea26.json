@@ -15,6 +15,7 @@
 			"paths" : 
 			[
 				"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/music.cpp",
+				"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/rss.cpp",
 				"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/stats.cpp",
 				"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/weather.cpp"
 			],

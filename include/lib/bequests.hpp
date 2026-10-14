@@ -1,3 +1,5 @@
+#pragma once
+
 #include <thread>
 #include <string>
 #include <atomic>
@@ -11,9 +13,10 @@ private:
 
 
     static size_t write_callback(char* data, size_t size, size_t count, void* output);
-    void internal(const std::string& url);
+    void internal(const std::string& url, const std::string& body, const std::string& token);
 public:
-    void request(const std::string& url);
+    void request(const std::string& url, const std::string& token="");
+    void post(const std::string& url, const std::string& body);
     bool done();
     bool wait();
     std::string get();

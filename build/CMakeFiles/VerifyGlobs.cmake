@@ -32,6 +32,7 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/*.cpp")
 set(OLD_GLOB
   "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/music.cpp"
+  "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/rss.cpp"
   "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/stats.cpp"
   "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/weather.cpp"
   )

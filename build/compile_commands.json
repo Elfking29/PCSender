@@ -25,6 +25,12 @@
 },
 {
   "directory": "/home/elfking-laptop/Development/Desk Clock/PC/build",
+  "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -DWITH_GZFILEOP -o CMakeFiles/PCSender.dir/src/sources/rss.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/rss.cpp\"",
+  "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/rss.cpp",
+  "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/sources/rss.cpp.o"
+},
+{
+  "directory": "/home/elfking-laptop/Development/Desk Clock/PC/build",
   "command": "/usr/bin/g++ -I\"/home/elfking-laptop/Development/Desk Clock/PC/include\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/lib\" -I\"/home/elfking-laptop/Development/Desk Clock/PC/include/sources\" -g -std=c++17 -DWITH_GZFILEOP -o CMakeFiles/PCSender.dir/src/sources/stats.cpp.o -c \"/home/elfking-laptop/Development/Desk Clock/PC/src/sources/stats.cpp\"",
   "file": "/home/elfking-laptop/Development/Desk Clock/PC/src/sources/stats.cpp",
   "output": "/home/elfking-laptop/Development/Desk Clock/PC/build/CMakeFiles/PCSender.dir/src/sources/stats.cpp.o"

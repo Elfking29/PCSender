@@ -8,6 +8,7 @@
 #include <stats.hpp>
 #include <music.hpp>
 #include <weather.hpp>
+#include <rss.hpp>
 
 
 int main(){
@@ -17,11 +18,13 @@ int main(){
     Stats stats;
     Music music;
     Weather weather;
+    Rss rss;
 
-    std::array<Source*, 3> sources = {
+    std::array<Source*, 4> sources = {
         &stats,
         &music,
-        &weather
+        &weather,
+        &rss
     };
 
 
@@ -59,7 +62,7 @@ int main(){
             // Handle Pico Input
             std::string line = usb.read();
             if (line!=""){
-                //printf(("FROM PICO: "+line).c_str());
+                printf(("FROM PICO: "+line).c_str());
                 if (line=="ALIVE\r\n"){watchdog=elapsed;}
                 else {}
             }
@@ -76,9 +79,9 @@ int main(){
         }
 
         else {
-            //printf("DISCONNECT\n");
+            printf("DISCONNECT\n");
             usb.connect();
-            //printf("CONNECT\n");
+            printf("CONNECT\n");
             now = std::chrono::steady_clock::now();
             elapsed = std::chrono::duration<double>(now-start).count();
             watchdog=elapsed;
