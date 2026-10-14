@@ -57,8 +57,9 @@ void Rss::handle(std::string res) {
                 !item["title"].is_string()) {
                 continue;
             }
-
-            articles.push_back(item["title"].get<std::string>());
+            std::string title = item["title"].get<std::string>();
+            if (title.empty()){title = " ";}
+            articles.push_back(title);
 
             std::string publisher = "Unknown";
             if (item.contains("origin") && item["origin"].is_object() &&
@@ -67,6 +68,7 @@ void Rss::handle(std::string res) {
                 publisher = item["origin"]["title"].get<std::string>();
             }
 
+            if (publisher.empty()){publisher=" ";}
             authors.push_back(publisher);
         }
 
