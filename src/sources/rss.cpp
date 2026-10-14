@@ -38,8 +38,9 @@ void Rss::update(){
 }
 
 void Rss::handle(std::string res) {
-    if (res.empty()) {return;}
-    if (res=="Unauthorized!"){reset();return;}
+    if (res.empty()) { return; }
+    if (res == "Unauthorized!") { reset(); return; }
+
     try {
         json data = json::parse(res);
 
@@ -47,21 +48,38 @@ void Rss::handle(std::string res) {
             return;
         }
 
+        std::vector<std::string> authors;
         std::vector<std::string> articles;
 
         for (const auto& item : data["items"]) {
-            if (item.is_object() &&
-                item.contains("title") &&
-                item["title"].is_string()) {
-                articles.push_back(item["title"].get<std::string>());
+            if (!item.is_object() ||
+                !item.contains("title") ||
+                !item["title"].is_string()) {
+                continue;
             }
+
+            articles.push_back(item["title"].get<std::string>());
+
+            std::string publisher = "Unknown";
+            if (item.contains("origin") && item["origin"].is_object() &&
+                item["origin"].contains("title") &&
+                item["origin"]["title"].is_string()) {
+                publisher = item["origin"]["title"].get<std::string>();
+            }
+
+            authors.push_back(publisher);
         }
 
-        sndstr="///RSSFD///"+std::to_string(articles.size())+"///SPLIT///";
+        sndstr = "///RSSFD///" + std::to_string(articles.size()) + "///SPLIT///";
 
-        for (const auto& article : articles) {
-            if (sndstr.size()+article.size()+11>1024){break;}
-            sndstr += article+"///SPLIT///";
+        for (std::size_t i = 0; i < articles.size(); ++i) {
+            std::string entry = authors[i] + "///SPLIT///" + articles[i] + "///SPLIT///";
+
+            if (sndstr.size() + entry.size() > 1024) {
+                break;
+            }
+
+            sndstr += entry;
         }
     }
     catch (...) {}
