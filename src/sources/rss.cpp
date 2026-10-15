@@ -20,8 +20,7 @@ std::string Rss::sendstring(){
 void Rss::update(){
     now = std::chrono::steady_clock::now();
     bool fail=false;
-    for (int i=0; i<6; i++){if (sndstr.empty()){fail=true;}}
-    if (last+600<std::chrono::duration<double>(now-start).count()||fail){
+    if (last+600<std::chrono::duration<double>(now-start).count()||sndstr.empty()||token.empty()){
         if (req.done()){
             if (token.empty()){tokenize(req.get());}
             else {handle(req.get());}
@@ -82,6 +81,8 @@ void Rss::handle(std::string res) {
             }
 
             sndstr += entry;
+            now=std::chrono::steady_clock::now();
+            last=std::chrono::duration<double>(now-start).count();
         }
     }
     catch (...) {}
